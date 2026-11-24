@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Miranda | Desenvolvedora de Sistemas</title>
+    <!-- Fontes e Ícones -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">Gabriela<span>.dev</span></a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">
+                    <i class='bx bx-moon'></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Disponível para oportunidades</span>
+                <h1>Olá, eu sou <br><span>Gabriela Miranda</span></h1>
+                <p class="subtitle">Estudante de Ciência da Computação & Desenvolvedora de Sistemas</p>
+                <p class="description">
+                    Natural de Brasília (DF), desenvolvo aplicações web completas unindo interfaces responsivas a arquiteturas de backend robustas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/gabsmrd" target="_blank" class="btn btn-outline">
+                        <i class='bx bxl-github'></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Substitua o src abaixo por "img/perfil.jpg" quando adicionar sua foto na pasta img -->
+                <img src="https://ui-avatars.com/api/?name=Gabriela+Miranda&background=6366f1&color=fff&size=300" alt="Foto de Gabriela Miranda" id="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim e Trajetória -->
+    <section id="sobre" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim & Trajetória</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Tenho 20 anos, nasci e moro em <strong>Brasília - DF</strong>. Minha paixão pela tecnologia começou cedo, sempre fui fascinada por como os sistemas funcionam por trás das telas.
+                    </p>
+                    <p>
+                        Minha jornada prática começou ao ingressar no curso de <strong>Programador Frontend no SENAI</strong>, em parceria com a <strong>Serasa Experian</strong>. Logo em seguida, concluí o curso <strong>Técnico em Desenvolvimento de Sistemas</strong> e, atualmente, estou cursando <strong>Ciência da Computação</strong> e concluindo minha formação no <strong>CIL (Centro Interescolar de Línguas)</strong> com nível de inglês intermediário (B2).
+                    </p>
+                    <p>
+                        Tenho experiência prática com Programação de Sistemas e Assistência em Tecnologia da Informação, atuando tanto no desenvolvimento de interfaces quanto na construção de regras de negócio e bancos de dados.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-tag">Atual</span>
+                        <h3>Ciência da Computação</h3>
+                        <p>Graduação em andamento</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-tag">Concluindo este semestre</span>
+                        <h3>Inglês Intermediário (B2)</h3>
+                        <p>Centro Interescolar de Línguas (CIL)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-tag">Concluído</span>
+                        <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                        <p>Formação técnica completa em programação e banco de dados</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-tag">Início da Jornada</span>
+                        <h3>Programador Frontend</h3>
+                        <p>SENAI em parceria com a Serasa Experian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bx-code-alt skill-icon'></i>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Bootstrap 5</li>
+                        <li>Design Responsivo (Mobile-First)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bx-server skill-icon'></i>
+                    <h3>Backend & Dados</h3>
+                    <ul>
+                        <li>Python & Django</li>
+                        <li>Java (17/21) & Spring Boot 3</li>
+                        <li>APIs RESTful</li>
+                        <li>MySQL & SQLite</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <i class='bx bx-wrench skill-icon'></i>
+                    <h3>Ferramentas & Outros</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Assistência em TI</li>
+                        <li>Arquitetura em Camadas / MVC</li>
+                        <li>Inglês Nível B2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            
+            <!-- Filtros em JS -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="python">Python / Django</button>
+                <button class="filter-btn" data-filter="java">Java / Spring</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projeto 1: Salus -->
+                <article class="project-card" data-category="python">
+                    <div class="project-header">
+                        <i class='bx bx-plus-medical project-icon'></i>
+                        <a href="https://github.com/gabsmrd/Salus" target="_blank" aria-label="Repositório Salus">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                    <h3>Salus - Gestão de Exames</h3>
+                    <p>
+                        Sistema web para clínicas e pacientes gerenciarem exames médicos com segurança. Possui controle de acesso (cliente/staff), upload e visualização integrada de PDFs com proteção por senha.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Bootstrap 5</span>
+                        <span>PDF.js</span>
+                    </div>
+                    <a href="https://github.com/gabsmrd/Salus" target="_blank" class="project-link">
+                        Ver código no GitHub <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </article>
+
+                <!-- Projeto 2: Estante Virtual -->
+                <article class="project-card" data-category="java">
+                    <div class="project-header">
+                        <i class='bx bx-book-bookmark project-icon'></i>
+                        <a href="https://github.com/gabsmrd/Estante-virtual-backend" target="_blank" aria-label="Repositório Estante Virtual">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                    <h3>Estante Virtual - API REST</h3>
+                    <p>
+                        API RESTful desenvolvida em arquitetura em camadas para gerenciamento de acervo de livros, revisões e acompanhamento de leitura, com persistência relacional.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Java 21</span>
+                        <span>Spring Boot 3</span>
+                        <span>JPA / Hibernate</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="https://github.com/gabsmrd/Estante-virtual-backend" target="_blank" class="project-link">
+                        Ver código no GitHub <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </article>
+
+                <!-- Projeto 3: Estude -->
+                <article class="project-card" data-category="python">
+                    <div class="project-header">
+                        <i class='bx bx-book-open project-icon'></i>
+                        <a href="https://github.com/gabsmrd/Estude" target="_blank" aria-label="Repositório Estude">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                    <h3>Estude - Gerenciador de Apostilas</h3>
+                    <p>
+                        Plataforma educacional para organização de materiais de estudo, permitindo upload de resumos, visualização rápida, flashcards e desafios de aprendizagem.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>HTML5 / CSS3</span>
+                        <span>SQLite</span>
+                    </div>
+                    <a href="https://github.com/gabsmrd/Estude" target="_blank" class="project-link">
+                        Ver código no GitHub <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container contact-container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p>Estou aberta a oportunidades de estágio, vagas júnior em desenvolvimento de sistemas e projetos colaborativos.</p>
+            <div class="contact-links">
+                <a href="https://github.com/gabsmrd" target="_blank" class="btn btn-primary">
+                    <i class='bx bxl-github'></i> Acessar meu GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Gabriela Miranda. Desenvolvido em Brasília - DF.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
