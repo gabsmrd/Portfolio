@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriela Miranda | Desenvolvedora Full Stack</title>
-    <meta name="description" content="Portfólio profissional de Gabriela Miranda - Desenvolvedora Full Stack especializada em Python, Django, Java, Spring Boot, JavaScript e arquitetura de sistemas.">
+    <meta name="description" content="Portfólio profissional de Gabriela Miranda - Desenvolvedora Full Stack.">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- CSS Externo -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Vinheta de Abertura (Preloader Tecnológico) -->
+    <!-- tela de carregamento inicial -->
     <div id="preloader" class="preloader">
         <div class="loader-content">
             <div class="loader-code">
@@ -30,18 +25,14 @@
             <div class="loader-bar">
                 <div class="loader-progress"></div>
             </div>
-            <p class="loader-status">Inicializando ambiente Full Stack...</p>
+            <p class="loader-status">Carregando portfólio...</p>
         </div>
     </div>
 
-    <!-- Barra de Progresso de Leitura -->
     <div class="scroll-progress" id="scroll-progress"></div>
-
-    <!-- Partículas / Luzes de Fundo -->
     <div class="ambient-glow glow-1"></div>
     <div class="ambient-glow glow-2"></div>
 
-    <!-- Cabeçalho -->
     <header class="header" id="header">
         <div class="container nav-container">
             <a href="#inicio" class="logo">
@@ -59,13 +50,12 @@
                     <li><a href="#servicos" class="nav-link">Serviços</a></li>
                     <li><a href="#projetos" class="nav-link">Projetos</a></li>
                     <li><a href="#stack" class="nav-link">Stack</a></li>
-                    <li><a href="#contato" class="nav-link nav-cta">Contratar / Contato</a></li>
+                    <li><a href="#contato" class="nav-link nav-cta">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Seção Hero -->
     <section id="inicio" class="hero">
         <div class="container hero-container">
             <div class="hero-content reveal">
@@ -116,8 +106,7 @@
             <div class="hero-visual reveal">
                 <div class="profile-frame tilt-card">
                     <div class="frame-ring"></div>
-                    <!-- Salve sua foto recortada na pasta img/ com o nome perfil.jpg -->
-                    <img src="img/perfil.jpg" alt="Gabriela Miranda - Desenvolvedora Full Stack" onerror="this.src='https://ui-avatars.com/api/?name=Gabriela+Miranda&background=E11D48&color=fff&size=400'">
+                    <img src="img/perfil.jpeg" alt="Gabriela Miranda - Desenvolvedora Full Stack">
                     
                     <div class="floating-badge badge-top">
                         <i class='bx bx-code-curly'></i>
@@ -139,7 +128,6 @@
         </div>
     </section>
 
-    <!-- Seção Sobre Mim -->
     <section id="sobre" class="section">
         <div class="container">
             <div class="section-header reveal">
@@ -205,7 +193,6 @@
         </div>
     </section>
 
-    <!-- Seção Serviços -->
     <section id="servicos" class="section bg-darker">
         <div class="container">
             <div class="section-header reveal">
@@ -261,7 +248,6 @@
         </div>
     </section>
 
-    <!-- Seção Projetos -->
     <section id="projetos" class="section">
         <div class="container">
             <div class="section-header reveal">
@@ -269,6 +255,7 @@
                 <h2 class="section-title">Projetos em Destaque</h2>
             </div>
 
+            <!-- botões de filtro por stack -->
             <div class="filter-tabs reveal">
                 <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
                 <button class="filter-btn" data-filter="fullstack">Full Stack (Python/Django)</button>
@@ -276,7 +263,6 @@
             </div>
 
             <div class="projects-grid">
-                <!-- Projeto 1: Salus -->
                 <article class="project-card glass-panel tilt-card reveal" data-category="fullstack">
                     <div class="project-top">
                         <span class="project-badge">Full Stack • Saúde</span>
@@ -302,7 +288,6 @@
                     </div>
                 </article>
 
-                <!-- Projeto 2: Estante Virtual -->
                 <article class="project-card glass-panel tilt-card reveal" data-category="backend">
                     <div class="project-top">
                         <span class="project-badge">Backend API • REST</span>
@@ -328,7 +313,6 @@
                     </div>
                 </article>
 
-                <!-- Projeto 3: Estude -->
                 <article class="project-card glass-panel tilt-card reveal" data-category="fullstack">
                     <div class="project-top">
                         <span class="project-badge">Full Stack • EdTech</span>
@@ -357,7 +341,6 @@
         </div>
     </section>
 
-    <!-- Seção Stack Tecnológica -->
     <section id="stack" class="section bg-darker">
         <div class="container">
             <div class="section-header reveal">
@@ -382,7 +365,6 @@
         </div>
     </section>
 
-    <!-- Seção / Página de Contato -->
     <section id="contato" class="section">
         <div class="container">
             <div class="section-header reveal">
@@ -391,7 +373,6 @@
             </div>
 
             <div class="contact-wrapper">
-                <!-- Informações Diretas -->
                 <div class="contact-info glass-panel reveal">
                     <h3>Pronta para novos desafios</h3>
                     <p>
@@ -438,7 +419,6 @@
                     </div>
                 </div>
 
-                <!-- Formulário de Mensagem Direta -->
                 <form class="contact-form glass-panel reveal" id="contact-form">
                     <h3>Envie uma mensagem direta</h3>
                     <div class="form-group">
@@ -470,7 +450,6 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container footer-content">
             <a href="#inicio" class="logo"><span class="logo-dot"></span>Gabriela<span>.dev</span></a>
@@ -483,10 +462,8 @@
         </div>
     </footer>
 
-    <!-- Toast de Notificação -->
-    <div id="toast" class="toast">E-mail copiado para a área de transferência!</div>
+    <div id="toast" class="toast">E-mail copiado!</div>
 
-    <!-- JS Externo -->
     <script src="js/script.js"></script>
 </body>
 </html>

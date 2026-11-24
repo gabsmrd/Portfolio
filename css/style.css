@@ -7,8 +7,8 @@
     --border-highlight: rgba(225, 29, 72, 0.45);
     --text-primary: #fafafa;
     --text-secondary: #a1a1aa;
-    --accent-primary: #e11d48;   /* Rubi / Carmesim vibrante */
-    --accent-secondary: #f59e0b; /* Dourado / Âmbar quente */
+    --accent-primary: #e11d48;
+    --accent-secondary: #f59e0b;
     --gradient: linear-gradient(135deg, #e11d48 0%, #f59e0b 100%);
     --glow-shadow: 0 10px 30px -10px rgba(225, 29, 72, 0.45);
 }
@@ -32,9 +32,7 @@ body {
     position: relative;
 }
 
-/* =========================================
-   VINHETA DE ABERTURA (PRELOADER)
-   ========================================= */
+/* preloader */
 .preloader {
     position: fixed;
     inset: 0;
@@ -101,9 +99,6 @@ body {
     100% { width: 100%; }
 }
 
-/* =========================================
-   BARRA DE LEITURA & BRILHO AMBIENTE
-   ========================================= */
 .scroll-progress {
     position: fixed;
     top: 0;
@@ -144,9 +139,6 @@ body {
     100% { transform: translate(40px, 30px) scale(1.1); }
 }
 
-/* =========================================
-   ESTRUTURA & COMPONENTES GERAIS
-   ========================================= */
 .container {
     width: 90%;
     max-width: 1160px;
@@ -196,9 +188,7 @@ body {
     letter-spacing: -0.02em;
 }
 
-/* =========================================
-   HEADER & NAVEGAÇÃO
-   ========================================= */
+/* header e menu */
 .header {
     position: sticky;
     top: 0;
@@ -275,9 +265,7 @@ body {
     cursor: pointer;
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
+/* hero */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -439,7 +427,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* Foto & Moldura Animada */
 .hero-visual {
     display: flex;
     justify-content: center;
@@ -510,9 +497,7 @@ body {
     50% { transform: translateY(-8px); }
 }
 
-/* =========================================
-   SOBRE MIM
-   ========================================= */
+/* sobre */
 .about-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -596,9 +581,7 @@ body {
     color: var(--text-secondary);
 }
 
-/* =========================================
-   SERVIÇOS
-   ========================================= */
+/* serviços */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -657,9 +640,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* =========================================
-   PROJETOS
-   ========================================= */
+/* projetos */
 .filter-tabs {
     display: flex;
     justify-content: center;
@@ -779,9 +760,7 @@ body {
     gap: 0.7rem;
 }
 
-/* =========================================
-   STACK PILLS
-   ========================================= */
+/* stack */
 .stack-container {
     display: flex;
     flex-wrap: wrap;
@@ -812,9 +791,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* =========================================
-   CONTATO
-   ========================================= */
+/* contato */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -908,7 +885,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* Formulário */
 .form-group {
     margin-bottom: 1.2rem;
 }
@@ -942,9 +918,6 @@ body {
     border-color: var(--accent-primary);
 }
 
-/* =========================================
-   FOOTER & TOAST
-   ========================================= */
 .footer {
     border-top: 1px solid var(--border);
     padding: 2.2rem 0;
@@ -1001,9 +974,6 @@ body {
     opacity: 1;
 }
 
-/* =========================================
-   ANIMAÇÕES SCROLL REVEAL
-   ========================================= */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -1015,9 +985,7 @@ body {
     transform: translateY(0);
 }
 
-/* =========================================
-   RESPONSIVIDADE MOBILE
-   ========================================= */
+/* responsivo */
 @media (max-width: 920px) {
     .hero-container,
     .about-grid,

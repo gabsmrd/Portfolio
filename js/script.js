@@ -1,19 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Vinheta de Abertura (Preloader)
+    // esconde o preloader assim que a página carrega
     const preloader = document.getElementById('preloader');
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 1200);
+        setTimeout(() => preloader.classList.add('fade-out'), 1200);
     });
-    // Fallback de segurança caso a página já esteja em cache
     setTimeout(() => preloader.classList.add('fade-out'), 1800);
 
-    // 2. Ano automático no rodapé
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // 3. Barra de Progresso de Leitura
+    // barra de progresso no topo
     const scrollProgress = document.getElementById('scroll-progress');
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY;
@@ -22,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollProgress.style.width = `${progress}%`;
     });
 
-    // 4. Menu Mobile
+    // menu mobile
     const menuToggle = document.getElementById('menu-toggle');
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -37,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 5. Efeito Typewriter (Digitação Dinâmica)
+    // efeito de digitação no subtítulo
     const typewriterEl = document.getElementById('typewriter');
     const roles = [
         'Desenvolvedora Full Stack',
@@ -51,18 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function typeEffect() {
         const currentRole = roles[roleIndex];
-        if (isDeleting) {
-            typewriterEl.textContent = currentRole.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typewriterEl.textContent = currentRole.substring(0, charIndex + 1);
-            charIndex++;
-        }
+        typewriterEl.textContent = isDeleting
+            ? currentRole.substring(0, charIndex - 1)
+            : currentRole.substring(0, charIndex + 1);
 
+        charIndex += isDeleting ? -1 : 1;
         let speed = isDeleting ? 45 : 85;
 
         if (!isDeleting && charIndex === currentRole.length) {
-            speed = 1800; // Pausa ao terminar a frase
+            speed = 1800;
             isDeleting = true;
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
@@ -74,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     typeEffect();
 
-    // 6. Scroll Reveal (Animação ao rolar a página)
+    // animação de entrada ao rolar a tela
     const revealElements = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -86,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // 7. Filtro de Projetos
+    // filtro dos cards de projeto
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
@@ -98,16 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const filter = btn.getAttribute('data-filter');
             projectCards.forEach(card => {
                 const category = card.getAttribute('data-category');
-                if (filter === 'all' || filter === category) {
-                    card.classList.remove('hide');
-                } else {
-                    card.classList.add('hide');
-                }
+                card.classList.toggle('hide', filter !== 'all' && filter !== category);
             });
         });
     });
 
-    // 8. Efeito Tilt 3D sutil nos cards (Desktop)
+    // inclinação 3D nos cards ao passar o mouse
     const tiltCards = document.querySelectorAll('.tilt-card');
     tiltCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
@@ -128,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 9. Botão Copiar E-mail + Toast
+    // copiar e-mail com aviso na tela
     const copyBtn = document.getElementById('copy-email');
     const toast = document.getElementById('toast');
 
@@ -145,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 10. Envio do Formulário de Contato via mailto estruturado
+    // monta o e-mail preenchido no formulário
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -157,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const mailtoLink = `mailto:gabiismiranda00@gmail.com?subject=${encodeURIComponent(`[Portfólio] ${subject} - ${name}`)}&body=${encodeURIComponent(`Nome: ${name}\nE-mail de retorno: ${email}\n\nMensagem:\n${message}`)}`;
 
-            showToast('Abrindo seu cliente de e-mail...');
+            showToast('Abrindo seu app de e-mail...');
             window.location.href = mailtoLink;
             contactForm.reset();
         });
